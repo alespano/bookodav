@@ -32,8 +32,8 @@ export default {
 	async fetch(request, env, ctx) {
 		// Extract the Authorization header
 		const authorization_header = request.headers.get("Authorization") || "";
-		console.error("LOGGING ACTIVATED")
-		console.error("HEADER: ", authorization_header)
+		console.error("LOGGING ACTIVATED");
+		console.error("HEADER: ", authorization_header);
 
 		const url = new URL(request.url);
 		let path = url.pathname;
